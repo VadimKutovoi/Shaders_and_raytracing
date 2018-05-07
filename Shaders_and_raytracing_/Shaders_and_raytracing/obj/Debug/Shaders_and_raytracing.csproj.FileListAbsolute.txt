@@ -1,0 +1,14 @@
+C:\Users\kutovoj.v\Desktop\UberTables\Shaders_and_raytracing\Shaders_and_raytracing\bin\Debug\Shaders_and_raytracing.exe.config
+C:\Users\kutovoj.v\Desktop\UberTables\Shaders_and_raytracing\Shaders_and_raytracing\bin\Debug\Shaders_and_raytracing.exe
+C:\Users\kutovoj.v\Desktop\UberTables\Shaders_and_raytracing\Shaders_and_raytracing\bin\Debug\Shaders_and_raytracing.pdb
+C:\Users\kutovoj.v\Desktop\UberTables\Shaders_and_raytracing\Shaders_and_raytracing\bin\Debug\OpenTK.dll
+C:\Users\kutovoj.v\Desktop\UberTables\Shaders_and_raytracing\Shaders_and_raytracing\bin\Debug\OpenTK.GLControl.dll
+C:\Users\kutovoj.v\Desktop\UberTables\Shaders_and_raytracing\Shaders_and_raytracing\bin\Debug\OpenTK.pdb
+C:\Users\kutovoj.v\Desktop\UberTables\Shaders_and_raytracing\Shaders_and_raytracing\bin\Debug\OpenTK.xml
+C:\Users\kutovoj.v\Desktop\UberTables\Shaders_and_raytracing\Shaders_and_raytracing\bin\Debug\OpenTK.GLControl.xml
+C:\Users\kutovoj.v\Desktop\UberTables\Shaders_and_raytracing\Shaders_and_raytracing\obj\Debug\Shaders_and_raytracing.csprojResolveAssemblyReference.cache
+C:\Users\kutovoj.v\Desktop\UberTables\Shaders_and_raytracing\Shaders_and_raytracing\obj\Debug\Shaders_and_raytracing.Form1.resources
+C:\Users\kutovoj.v\Desktop\UberTables\Shaders_and_raytracing\Shaders_and_raytracing\obj\Debug\Shaders_and_raytracing.Properties.Resources.resources
+C:\Users\kutovoj.v\Desktop\UberTables\Shaders_and_raytracing\Shaders_and_raytracing\obj\Debug\Shaders_and_raytracing.csproj.GenerateResource.Cache
+C:\Users\kutovoj.v\Desktop\UberTables\Shaders_and_raytracing\Shaders_and_raytracing\obj\Debug\Shaders_and_raytracing.exe
+C:\Users\kutovoj.v\Desktop\UberTables\Shaders_and_raytracing\Shaders_and_raytracing\obj\Debug\Shaders_and_raytracing.pdb

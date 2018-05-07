@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shaders_and_raytracing", "Shaders_and_raytracing\Shaders_and_raytracing.csproj", "{EA1715B3-0234-4A38-B13E-EA7FB8BE153E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA1715B3-0234-4A38-B13E-EA7FB8BE153E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA1715B3-0234-4A38-B13E-EA7FB8BE153E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA1715B3-0234-4A38-B13E-EA7FB8BE153E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA1715B3-0234-4A38-B13E-EA7FB8BE153E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
