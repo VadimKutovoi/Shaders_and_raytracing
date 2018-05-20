@@ -8,9 +8,9 @@ namespace Shaders_and_raytracing
 {
     class GLgraphics
     {
-        Vector3 cameraPosition = new Vector3(2, 3, 4);
+        Vector3 cameraPosition = new Vector3(0, 0, 0.8f);
         Vector3 cameraDirecton = new Vector3(0, 0, 0);
-        Vector3 cameraUp = new Vector3(0, 0, 1);
+        Vector3 cameraUp = new Vector3(0, 1, 0);
 
         public float latitude = 47.98f;
         public float longitude = 60.41f;
@@ -50,31 +50,36 @@ namespace Shaders_and_raytracing
             Matrix4 viewMat = Matrix4.LookAt(cameraPosition, cameraDirecton, cameraUp);
             GL.MatrixMode(MatrixMode.Modelview);
             GL.LoadMatrix(ref viewMat);
+
             Render();
         }
 
-        private void drawTestQuad()
+        private void Draw()
         {
-            GL.Begin(PrimitiveType.Quads);
+            //GL.Begin(PrimitiveType.Polygon);
 
-            GL.Color3(Color.Blue);
-            GL.Vertex3(-1.0f, -1.0f, -1.0f);
+            //GL.Color3(Color.Blue);
+            //GL.Vertex3(-1.0f, -1.0f, -1.0f);
 
-            GL.Color3(Color.Red);
-            GL.Vertex3(-1.0f, 1.0f, -1.0f);
+            //GL.Color3(Color.Red);
+            //GL.Vertex3(-1.0f, 1.0f, -1.0f);
 
-            GL.Color3(Color.White);
-            GL.Vertex3(1.0f, 1.0f, -1.0f);
+            //GL.Color3(Color.White);
+            //GL.Vertex3(1.0f, 1.0f, -1.0f);
 
-            GL.Color3(Color.Green);
-            GL.Vertex3(1.0f, -1.0f, -1.0f);
+            //GL.End();
 
-            GL.End();
+            InitShaders();
+
+            GL.UseProgram(BasicProgramID);
+            GL.DrawArrays(PrimitiveType.Triangles, 0, 3);
+            GL.UseProgram(0);
+
         }
 
         public void Render()
         {
-            drawTestQuad();
+            Draw();
         }
 
         void loadShader(String filename, ShaderType type, int program, out int address)
@@ -92,28 +97,31 @@ namespace Shaders_and_raytracing
         private void InitShaders()
         {
             float[] positionData = { -0.8f, -0.8f, 0.0f, 0.8f, -0.8f, 0.0f, 0.0f, 0.8f, 0.0f };
-            float[] colorData = { 1.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f };            int[] vboHandlers = new int[2];
-            
+            float[] colorData = { 1.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f };
+            int[] vboHandlers = new int[2];
+
             BasicProgramID = GL.CreateProgram();
-            loadShader("C:\\Users\\kutovoj.v\\Desktop\\UberTables\\Shaders_and_raytracing\\Shaders_and_raytracing\\basic.vs", ShaderType.VertexShader, BasicProgramID,
+            loadShader("..\\..\\basic.vs.txt", ShaderType.VertexShader, BasicProgramID,
             out BasicVertexShader);
-            loadShader("C:\\Users\\kutovoj.v\\Desktop\\UberTables\\Shaders_and_raytracing\\Shaders_and_raytracing\\basic.fs", ShaderType.FragmentShader, BasicProgramID,
+            loadShader("..\\..\\basic.fs.txt", ShaderType.FragmentShader, BasicProgramID,
             out BasicFragmentShader);
+
             GL.LinkProgram(BasicProgramID);
+
             int status = 0;
             GL.GetProgram(BasicProgramID, GetProgramParameterName.LinkStatus, out status);
             Console.WriteLine(GL.GetProgramInfoLog(BasicProgramID));
 
             GL.GenBuffers(2, vboHandlers);
             GL.BindBuffer(BufferTarget.ArrayBuffer, vboHandlers[0]);
-
             GL.BufferData(BufferTarget.ArrayBuffer,
-            (IntPtr)(sizeof(float) * positionData.Length),
-            positionData, BufferUsageHint.StaticDraw);
+                            (IntPtr)(sizeof(float) * positionData.Length),
+                            positionData, BufferUsageHint.StaticDraw);
             GL.BindBuffer(BufferTarget.ArrayBuffer, vboHandlers[1]);
             GL.BufferData(BufferTarget.ArrayBuffer,
-            (IntPtr)(sizeof(float) * colorData.Length),
-            colorData, BufferUsageHint.StaticDraw);
+                            (IntPtr)(sizeof(float) * colorData.Length),
+                             colorData, BufferUsageHint.StaticDraw);
+
             vaoHandle = GL.GenVertexArray();
             GL.BindVertexArray(vaoHandle);
 
@@ -123,7 +131,7 @@ namespace Shaders_and_raytracing
             GL.BindBuffer(BufferTarget.ArrayBuffer, vboHandlers[0]);
             GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 0, 0);
             GL.BindBuffer(BufferTarget.ArrayBuffer, vboHandlers[1]);
-            GL.VertexAttribPointer(1, 3, VertexAttribPointerType.Float, false, 0, 0);
+            GL.VertexAttribPointer(1, 3, VertexAttribPointerType.Float, false, 0, 0);
         }
     }
 }
