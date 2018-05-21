@@ -38,9 +38,7 @@ namespace Shaders_and_raytracing
 
         private void Application_Idle(object sender, PaintEventArgs e)
         {
-
             glControl1_Paint(sender, e);
-
         }
 
         private void glControl1_MouseMove(object sender, MouseEventArgs e)
@@ -49,7 +47,6 @@ namespace Shaders_and_raytracing
             //float heightCoef = (-e.Y + glControl1.Height * 0.5f) / (float)glControl1.Height;
             //glgraphics.latitude = heightCoef * 180;
             //glgraphics.longitude = widthCoef * 360;
-
         }
     }
 }

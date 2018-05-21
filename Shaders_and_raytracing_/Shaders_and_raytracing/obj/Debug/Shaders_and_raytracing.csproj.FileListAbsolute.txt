@@ -24,3 +24,15 @@ C:\Users\sirku\Desktop\Shaders_and_raytracing-master\Shaders_and_raytracing_\Sha
 C:\Users\sirku\Desktop\Shaders_and_raytracing-master\Shaders_and_raytracing_\Shaders_and_raytracing\obj\Debug\Shaders_and_raytracing.Form1.resources
 C:\Users\sirku\Desktop\Shaders_and_raytracing-master\Shaders_and_raytracing_\Shaders_and_raytracing\obj\Debug\Shaders_and_raytracing.Properties.Resources.resources
 C:\Users\sirku\Desktop\Shaders_and_raytracing-master\Shaders_and_raytracing_\Shaders_and_raytracing\obj\Debug\Shaders_and_raytracing.csproj.GenerateResource.Cache
+C:\Users\Kutovoj.v\Desktop\Shaders_and_raytracing\Shaders_and_raytracing_\Shaders_and_raytracing\bin\Debug\Shaders_and_raytracing.exe.config
+C:\Users\Kutovoj.v\Desktop\Shaders_and_raytracing\Shaders_and_raytracing_\Shaders_and_raytracing\obj\Debug\Shaders_and_raytracing.exe
+C:\Users\Kutovoj.v\Desktop\Shaders_and_raytracing\Shaders_and_raytracing_\Shaders_and_raytracing\obj\Debug\Shaders_and_raytracing.pdb
+C:\Users\Kutovoj.v\Desktop\Shaders_and_raytracing\Shaders_and_raytracing_\Shaders_and_raytracing\bin\Debug\Shaders_and_raytracing.exe
+C:\Users\Kutovoj.v\Desktop\Shaders_and_raytracing\Shaders_and_raytracing_\Shaders_and_raytracing\bin\Debug\Shaders_and_raytracing.pdb
+C:\Users\Kutovoj.v\Desktop\Shaders_and_raytracing\Shaders_and_raytracing_\Shaders_and_raytracing\bin\Debug\OpenTK.pdb
+C:\Users\Kutovoj.v\Desktop\Shaders_and_raytracing\Shaders_and_raytracing_\Shaders_and_raytracing\bin\Debug\OpenTK.xml
+C:\Users\Kutovoj.v\Desktop\Shaders_and_raytracing\Shaders_and_raytracing_\Shaders_and_raytracing\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Kutovoj.v\Desktop\Shaders_and_raytracing\Shaders_and_raytracing_\Shaders_and_raytracing\obj\Debug\Shaders_and_raytracing.csprojResolveAssemblyReference.cache
+C:\Users\Kutovoj.v\Desktop\Shaders_and_raytracing\Shaders_and_raytracing_\Shaders_and_raytracing\obj\Debug\Shaders_and_raytracing.Form1.resources
+C:\Users\Kutovoj.v\Desktop\Shaders_and_raytracing\Shaders_and_raytracing_\Shaders_and_raytracing\obj\Debug\Shaders_and_raytracing.Properties.Resources.resources
+C:\Users\Kutovoj.v\Desktop\Shaders_and_raytracing\Shaders_and_raytracing_\Shaders_and_raytracing\obj\Debug\Shaders_and_raytracing.csproj.GenerateResource.Cache
