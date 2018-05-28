@@ -62,7 +62,7 @@ struct HitInfo
 const int Max_Depth = 5;
 const int Max_Nodes = 64;
 RayNode rayNode[Max_Nodes];
-const int sphereCount = 4;
+const int sphereCount = 8;
 Sphere spheres[sphereCount];
 const int TYPE_DIFFUSE = 1;
 const int TYPE_SHADOW = 2;
@@ -289,7 +289,7 @@ vec3 iterativeRayTrace(Ray ray)
 	sphere.position = vec3(1.1, 0.0, 0.3);
 	sphere.radius = 0.2;
 	//sphere.color = vec3(0.5, 0.8, 0.4);
-	sphere.material = new;
+	sphere.material = gold;
 	sphere.objectid = 2;
 	sphere.objectType = TYPE_SPHERE;
 	spheres[2] = sphere;
@@ -297,10 +297,44 @@ vec3 iterativeRayTrace(Ray ray)
 	sphere.position = vec3(0.0, -1.0, 0.2);
 	sphere.radius = 0.2;
 	//sphere.color = vec3(0.5, 0.8, 0.4);
-	sphere.material = chrome;
+	sphere.material = gold;
 	sphere.objectid = 3;
 	sphere.objectType = TYPE_SPHERE;
 	spheres[3] = sphere;
+
+	sphere.position = vec3(0.7, 0.7, 0.2);
+	sphere.radius = 0.2;
+	//sphere.color = vec3(0.5, 0.8, 0.4);
+	sphere.material = gold;
+	sphere.objectid = 2;
+	sphere.objectType = TYPE_SPHERE;
+	spheres[4] = sphere;
+
+	sphere.position = vec3(-0.7, 0.7, 0.2);
+	sphere.radius = 0.2;
+	//sphere.color = vec3(0.5, 0.8, 0.4);
+	sphere.material = gold;
+	sphere.objectid = 2;
+	sphere.objectType = TYPE_SPHERE;
+	spheres[5] = sphere;
+
+	sphere.position = vec3(0.7, -0.7, 0.2);
+	sphere.radius = 0.2;
+	//sphere.color = vec3(0.5, 0.8, 0.4);
+	sphere.material = gold;
+	sphere.objectid = 2;
+	sphere.objectType = TYPE_SPHERE;
+	spheres[6] = sphere;
+
+	sphere.position = vec3(-0.7, -0.7, 0.2);
+	sphere.radius = 0.2;
+	//sphere.color = vec3(0.5, 0.8, 0.4);
+	sphere.material = gold;
+	sphere.objectid = 2;
+	sphere.objectType = TYPE_SPHERE;
+	spheres[7] = sphere; 
+
+	
 
 	int numberOfNodes = 1, currentNodeIndex = 0;
 
